@@ -17,6 +17,7 @@ com.ticxo.modelengine.api.generator.assets
 com.ticxo.modelengine.api.generator.blueprint
 com.ticxo.modelengine.api.generator.parser
 com.ticxo.modelengine.api.interaction
+com.ticxo.modelengine.api.menu
 com.ticxo.modelengine.api.model
 com.ticxo.modelengine.api.model.bone
 com.ticxo.modelengine.api.model.bone.behavior
@@ -43,6 +44,7 @@ com.ticxo.modelengine.api.utils.logger
 com.ticxo.modelengine.api.utils.math
 com.ticxo.modelengine.api.utils.promise
 com.ticxo.modelengine.api.utils.registry
+com.ticxo.modelengine.api.utils.scheduling
 com.ticxo.modelengine.api.utils.state
 com.ticxo.modelengine.api.utils.ticker
 com.ticxo.modelengine.api.vfx
