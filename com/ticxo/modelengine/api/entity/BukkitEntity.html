@@ -108,7 +108,7 @@ implements <a href="BaseEntity.html" title="interface in com.ticxo.modelengine.a
 <div class="col-first even-row-color"><code>protected final <a href="../nms/entity/EntityHandler.html" title="interface in com.ticxo.modelengine.api.nms.entity">EntityHandler</a></code></div>
 <div class="col-second even-row-color"><code><a href="#entityHandler" class="member-name-link">entityHandler</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected final int</code></div>
+<div class="col-first odd-row-color"><code>protected int</code></div>
 <div class="col-second odd-row-color"><code><a href="#entityId" class="member-name-link">entityId</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>protected boolean</code></div>
@@ -258,27 +258,32 @@ implements <a href="BaseEntity.html" title="interface in com.ticxo.modelengine.a
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#load(com.ticxo.modelengine.api.utils.data.io.SavedData)" class="member-name-link">load</a><wbr>(<a href="../utils/data/io/SavedData.html" title="class in com.ticxo.modelengine.api.utils.data.io">SavedData</a>&nbsp;data)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#registerData()" class="member-name-link">registerData</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onWorldChanged()" class="member-name-link">onWorldChanged</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Re-syncs lookup and base visibility after the backing entity changes world.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#save(com.ticxo.modelengine.api.utils.data.io.SavedData)" class="member-name-link">save</a><wbr>(<a href="../utils/data/io/SavedData.html" title="class in com.ticxo.modelengine.api.utils.data.io">SavedData</a>&nbsp;data)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#registerData()" class="member-name-link">registerData</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCollidableWith(org.bukkit.entity.Entity,boolean)" class="member-name-link">setCollidableWith</a><wbr>(org.bukkit.entity.Entity&nbsp;entity,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#save(com.ticxo.modelengine.api.utils.data.io.SavedData)" class="member-name-link">save</a><wbr>(<a href="../utils/data/io/SavedData.html" title="class in com.ticxo.modelengine.api.utils.data.io">SavedData</a>&nbsp;data)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCollidableWith(org.bukkit.entity.Entity,boolean)" class="member-name-link">setCollidableWith</a><wbr>(org.bukkit.entity.Entity&nbsp;entity,
  boolean&nbsp;flag)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setForcedAlive(boolean)" class="member-name-link">setForcedAlive</a><wbr>(boolean&nbsp;flag)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMaxStepHeight(double)" class="member-name-link">setMaxStepHeight</a><wbr>(double&nbsp;stepHeight)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setForcedAlive(boolean)" class="member-name-link">setForcedAlive</a><wbr>(boolean&nbsp;flag)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRenderRadius(int)" class="member-name-link">setRenderRadius</a><wbr>(int&nbsp;radius)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMaxStepHeight(double)" class="member-name-link">setMaxStepHeight</a><wbr>(double&nbsp;stepHeight)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setVisible(boolean)" class="member-name-link">setVisible</a><wbr>(boolean&nbsp;flag)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRenderRadius(int)" class="member-name-link">setRenderRadius</a><wbr>(int&nbsp;radius)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setVisible(boolean)" class="member-name-link">setVisible</a><wbr>(boolean&nbsp;flag)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -347,7 +352,7 @@ implements <a href="BaseEntity.html" title="interface in com.ticxo.modelengine.a
 <li>
 <section class="detail" id="entityId">
 <h3>entityId</h3>
-<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">entityId</span></div>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">entityId</span></div>
 </section>
 </li>
 </ul>
@@ -396,6 +401,16 @@ implements <a href="BaseEntity.html" title="interface in com.ticxo.modelengine.a
 <dt>Specified by:</dt>
 <dd><code><a href="BaseEntity.html#setVisible(boolean)">setVisible</a></code>&nbsp;in interface&nbsp;<code><a href="BaseEntity.html" title="interface in com.ticxo.modelengine.api.entity">BaseEntity</a>&lt;org.bukkit.entity.Entity&gt;</code></dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="onWorldChanged()">
+<h3>onWorldChanged</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">onWorldChanged</span>()</div>
+<div class="block">Re-syncs lookup and base visibility after the backing entity changes world. A cross-dimension
+ teleport recreates the NMS entity with a new network id; the packet interceptor keys base-hiding
+ on that id, so without re-keying the base (e.g. a MythicMob's pig/husk) becomes visible. Re-key
+ the id, then re-assert the hide for current trackers in case the new spawn already slipped through.</div>
 </section>
 </li>
 <li>

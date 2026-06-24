@@ -800,9 +800,9 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getModeledEntity(int)">
 <h3>getModeledEntity</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="model/ModeledEntity.html" title="interface in com.ticxo.modelengine.api.model">ModeledEntity</a></span>&nbsp;<span class="element-name">getModeledEntity</span><wbr><span class="parameters">(int&nbsp;id)</span></div>
-<div class="block">Looks up a model by the entity's network id. This id is captured when the model is created and is
- NOT re-keyed if the entity changes worlds (a cross-world teleport gives it a new network id), so
- this can return null after such a teleport. Prefer <a href="#getModeledEntity(java.util.UUID)"><code>getModeledEntity(UUID)</code></a> for a stable key.</div>
+<div class="block">Looks up a model by the entity's network id. The id is re-keyed when the entity changes world (a
+ cross-world teleport gives it a new network id), but there is a brief window after such a teleport,
+ before the next sync tick, where this may miss. Prefer <a href="#getModeledEntity(java.util.UUID)"><code>getModeledEntity(UUID)</code></a> for a stable key.</div>
 </section>
 </li>
 <li>
